@@ -1,0 +1,61 @@
+@import url(./css/top.css);
+@import url(./css/todolist.css);
+@import url(./css/new-todo.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  padding: 24px 16px;
+}
+:root {
+  --main-color: #6750A4;
+  --title-size: 20px;
+}
+.title {
+  font-size: var(--title-size);
+  font-weight: 500;  
+}
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;  
+}
+
+.btn {
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 24px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn--primary {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.btn--primary:hover {
+  background-color: #6e55b4;
+}
+.btn--outlined {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.btn--outlined:hover {
+  background-color: rgba(0,0,0,0.04);
+}
+.btn--delete {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+
+
+  
+  

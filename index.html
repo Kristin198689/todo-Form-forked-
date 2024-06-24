@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="top">
+      <h1 class="title"></h1>
+      <h2 class="subtitle"></h2>
+
+      <div class="top__search-box">
+        <input type="text" class="top__search-input" placeholder="Поиск" />
+        <i class="bx bx-search top__search-icon"></i>
+      </div>
+    </section>
+
+    <section class="new-todo">
+      <h1 class="title">Новая запись</h1>
+
+      <form id="create-todo-form" class="new-todo__form">
+        <div class="new-todo__field">
+          <input
+            name="todoDesc"
+            type="text"
+            class="new-todo__input"
+            placeholder="Описание"
+          />
+          <div
+            class="new-todo__validation-box new-todo__desc-validation-box"
+          ></div>
+        </div>
+        <div class="new-todo__field">
+          <input
+            name="todoTime"
+            type="datetime-local"
+            class="new-todo__input"
+            placeholder="Дата"
+          />
+          <div
+            class="new-todo__validation-box new-todo__time-validation-box"
+          ></div>
+        </div>
+
+        <div class="new-todo__btn-line">
+          <button class="btn btn--primary" type="submit">Добавить</button>
+          <button class="btn btn--outlined" type="reset">Очистить</button>
+        </div>
+      </form>
+    </section>
+
+         </button>
+        <button class="todolist__filters-btn">Активные</button>
+        <button class="todolist__filters-btn">Завершенные</button>
+      </div>
+
+      <ul class="todolist__list">
+        <!-- <li class="todolist__list-item">
+        <input type="checkbox" class="todolist__list-checkbox">
+        <div class="todolist__list-item-content">
+          <time class="todolist__list-item-time">10 января, 11:30</time>
+          <p class="todolist__list-item-text">Покормить кошку</p>
+        </div>
+      </li> -->
+      </ul>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>   <section class="todolist">
+      <h1 class="title">Список дел</h1>
+
+      <div class="todolist__filters">
+        <button class="todolist__filters-btn todolist__filters-btn--active">
+          Все
+
